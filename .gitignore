@@ -1,0 +1,11 @@
+# Claude Code — configuración local (no subir a GitHub)
+CLAUDE.md
+.claude/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Notas privadas
+*.private.md
+private/

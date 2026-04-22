@@ -1,22 +1,28 @@
-Readme · MDCopy🔐 Hacking Lab — Documentación de Hacking Ético
+# 🔐 Hacking Lab — Documentación de Hacking Ético
+
 Repositorio personal de aprendizaje de hacking ético y ciberseguridad ofensiva. Contiene cheat sheets de herramientas, notas de máquinas resueltas y material del curso.
 
-⚠️ Aviso legal: Todo el contenido de este repositorio está orientado exclusivamente a entornos controlados y laboratorios de práctica (HackMyVM, TryHackMe, VulnHub, DockerLabs). Ninguna técnica documentada aquí debe aplicarse sobre sistemas sin autorización explícita del propietario. El uso indebido de estas técnicas puede constituir un delito según el artículo 197 bis del Código Penal español.
+> ⚠️ **Aviso legal:** Todo el contenido de este repositorio está orientado exclusivamente a entornos controlados y laboratorios de práctica (HackMyVM, TryHackMe, VulnHub, DockerLabs). Ninguna técnica documentada aquí debe aplicarse sobre sistemas sin autorización explícita del propietario. El uso indebido de estas técnicas puede constituir un delito según el artículo 197 bis del Código Penal español.
 
+---
 
-🎯 Objetivo
+## 🎯 Objetivo
+
 Construir una base de conocimiento práctica y progresiva sobre:
 
-Reconocimiento y escaneo de redes
-Enumeración de servicios y aplicaciones web
-Explotación de vulnerabilidades conocidas
-Escalada de privilegios en Linux y Windows
-Análisis y manipulación de tráfico de red
-Auditoría WiFi y seguridad inalámbrica
+- Reconocimiento y escaneo de redes
+- Enumeración de servicios y aplicaciones web
+- Explotación de vulnerabilidades conocidas
+- Escalada de privilegios en Linux y Windows
+- Análisis y manipulación de tráfico de red
+- Auditoría WiFi y seguridad inalámbrica
 
+---
 
-📁 Estructura del repositorio
-hacking-lab/
+## 📁 Estructura del repositorio
+
+```
+CTF-Writeups/
 │
 ├── docs/                        # Cheat sheets por herramienta
 │   ├── nmap.md                  # Escaneo de puertos y servicios
@@ -44,44 +50,80 @@ hacking-lab/
     ├── trust-dockerlabs.md      # DockerLabs — Trust
     ├── injection-dockerlabs.md  # DockerLabs — Injection
     ├── wordpress-dockerlabs.md  # DockerLabs — WordPress
-    ├── asucar-dockerlabs.md     # DockerLabs — Asucar
-    └── library-dockerlabs.md   # DockerLabs — Library
+    └── gitdwn-hackmyvm.md       # HackMyVM — Gitdwn
+```
 
-🛠️ Herramientas documentadas
-HerramientaUso principalCheat sheetnmapEscaneo de puertos y detección de OSdocs/nmap.mdgobusterFuerza bruta de directorios/vhostsdocs/gobuster.mdhydraFuerza bruta de credencialesdocs/hydra.mdwpscanEnumeración y explotación WordPressdocs/wpscan.mdmetasploitExplotación y post-explotacióndocs/metasploit.mdburpsuiteIntercepción y análisis de tráfico webdocs/burpsuite.mdsnmp-checkEnumeración vía protocolo SNMPdocs/snmp.mdjohn / hashcatCrackeo de hashesdocs/john-hashcat.mdaircrack-ngAuditoría WiFi y captura de handshakesdocs/aircrack-ng.mdsearchsploitBúsqueda de exploits en ExploitDBdocs/searchsploit.md
+---
 
-📋 Metodología de cada lab
-Cada writeup en labs/ sigue esta estructura:
+## 🛠️ Herramientas documentadas
 
-Reconocimiento — descubrimiento de host y puertos abiertos
-Enumeración — servicios, versiones, rutas web, usuarios
-Explotación — obtención de acceso inicial
-Escalada de privilegios — de usuario a root
-Flags — captura de user.txt y root.txt
-Lecciones aprendidas — técnicas y conceptos clave
+| Herramienta    | Uso principal                             | Cheat sheet          |
+|----------------|-------------------------------------------|----------------------|
+| nmap           | Escaneo de puertos y detección de OS      | docs/nmap.md         |
+| gobuster       | Fuerza bruta de directorios/vhosts        | docs/gobuster.md     |
+| hydra          | Fuerza bruta de credenciales              | docs/hydra.md        |
+| wpscan         | Enumeración y explotación WordPress       | docs/wpscan.md       |
+| metasploit     | Explotación y post-explotación            | docs/metasploit.md   |
+| burpsuite      | Intercepción y análisis de tráfico web    | docs/burpsuite.md    |
+| snmp-check     | Enumeración vía protocolo SNMP            | docs/snmp.md         |
+| john / hashcat | Crackeo de hashes                         | docs/john-hashcat.md |
+| aircrack-ng    | Auditoría WiFi y captura de handshakes    | docs/aircrack-ng.md  |
+| searchsploit   | Búsqueda de exploits en ExploitDB         | docs/searchsploit.md |
 
+---
 
-📚 Material del curso
-UnidadTemaUD01Introducción al hacking éticoUD02Protocolos y explotación webUD03Windows y Active DirectoryUD04WordPress y CMSUD05Definición de objetivos de seguridad
+## 📋 Metodología de cada lab
 
-🖥️ Plataformas utilizadas
+Cada writeup en `labs/` sigue esta estructura:
 
-HackMyVM
-TryHackMe
-VulnHub
-DockerLabs
+1. **Reconocimiento** — descubrimiento de host y puertos abiertos
+2. **Enumeración** — servicios, versiones, rutas web, usuarios
+3. **Explotación** — obtención de acceso inicial
+4. **Escalada de privilegios** — de usuario a root
+5. **Flags** — captura de `user.txt` y `root.txt`
+6. **Lecciones aprendidas** — técnicas y conceptos clave
 
+---
 
-⚙️ Entorno de trabajo
+## 📚 Material del curso
 
-Sistema operativo: Kali Linux (rolling)
-Arquitectura: laboratorio local con máquinas virtuales / contenedores Docker
-Hardware: Acer Nitro V
-Antena WiFi: Alfa AWUS036ACH (RTL8812AU) — modo monitor/inyección
-VPN: ProtonVPN
-Editor: VS Code + Claude Code
+| Unidad | Tema                                  |
+|--------|---------------------------------------|
+| UD01   | Introducción al hacking ético         |
+| UD02   | Protocolos y explotación web          |
+| UD03   | Windows y Active Directory            |
+| UD04   | WordPress y CMS                       |
+| UD05   | Definición de objetivos de seguridad  |
 
+---
 
-📊 Progreso
-PlataformaRootsUsersHackMyVM77DockerLabs55
-Actualizado: Abril 2026
+## 🖥️ Plataformas utilizadas
+
+- [HackMyVM](https://hackmyvm.eu)
+- [TryHackMe](https://tryhackme.com)
+- [VulnHub](https://vulnhub.com)
+- [DockerLabs](https://dockerlabs.es)
+
+---
+
+## ⚙️ Entorno de trabajo
+
+| Componente   | Detalle                                         |
+|--------------|-------------------------------------------------|
+| SO           | Kali Linux (rolling)                            |
+| Arquitectura | Laboratorio local — VMs / contenedores Docker   |
+| Hardware     | Acer Nitro V                                    |
+| Antena WiFi  | Alfa AWUS036ACH (RTL8812AU) — monitor/inyección |
+| VPN          | ProtonVPN                                       |
+| Editor       | VS Code + Claude Code                           |
+
+---
+
+## 📊 Progreso
+
+| Plataforma | Roots | Users |
+|------------|-------|-------|
+| HackMyVM   | 7     | 7     |
+| DockerLabs | 5     | 5     |
+
+_Actualizado: Abril 2026_
