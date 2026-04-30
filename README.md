@@ -41,16 +41,21 @@ CTF-Writeups/
 └── labs/                        # Writeups por máquina resuelta
     ├── friendly3.md             # HackMyVM — Friendly3
     ├── gameshell3.md            # HackMyVM — GameShell3
-    ├── gameshell4.md            # HackMyVM — GameShell4
+    ├── gameshell4-writeup.md    # HackMyVM — GameShell4
     ├── yuan112.md               # HackMyVM — Yuan112
     ├── yuan113.md               # HackMyVM — Yuan113
     ├── liar.md                  # HackMyVM — Liar
     ├── logan.md                 # HackMyVM — Logan
     ├── microchoft.md            # HackMyVM — Microchoft
+    ├── gitdwn-hackmyvm.md       # HackMyVM — Gitdwn
+    ├── fromytoy_writeup.md      # HackMyVM — Fromytoy
+    ├── ms02423-hackmyvm.md      # HackMyVM — MS02423
+    ├── Realsaga.md              # HackMyVM — Realsaga
+    ├── poppins.md               # HackMyVM — Poppins
+    ├── dc04-soupedecode-writeup.md  # HackMyVM — DC04 (Windows AD)
     ├── trust-dockerlabs.md      # DockerLabs — Trust
     ├── injection-dockerlabs.md  # DockerLabs — Injection
-    ├── wordpress-dockerlabs.md  # DockerLabs — WordPress
-    └── gitdwn-hackmyvm.md       # HackMyVM — Gitdwn
+    └── wordpress-dockerlabs.md  # DockerLabs — WordPress
 ```
 
 ---
@@ -121,9 +126,9 @@ Cada writeup en `labs/` sigue esta estructura:
 
 ## 📊 Progreso
 
-| Plataforma | Roots | Users |
-|------------|-------|-------|
-| HackMyVM   | 7     | 7     |
-| DockerLabs | 5     | 5     |
+| Plataforma | Máquinas | Roots | Users |
+|------------|----------|-------|-------|
+| HackMyVM   | 14       | 14    | 14    |
+| DockerLabs | 3        | 3     | 3     |
 
 _Actualizado: Abril 2026_
